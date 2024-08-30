@@ -109,7 +109,7 @@ class CameraApp:
         return frame
 
     def log_plate(self, text):
-        with open("car_plate_data.txt", "a") as file:
+        with open("placas.txt", "a") as file:
             current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             file.write(f"{text}\t{current_datetime}\n")
 
